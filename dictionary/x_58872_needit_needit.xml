@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
-        <element label="Request for" mandatory="true" max_length="32" name="u_request_for" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Request for" mandatory="true" max_length="32" name="u_request_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Reasources" sequence="0" value="hr"/>
